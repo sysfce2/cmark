@@ -136,6 +136,8 @@ jobs:
         cmake --build build
         ctest --test-dir build -C Debug --output-on-failure
       shell: cmd
+    - name: diagnostic
+      run: 'dir /b /a /s'
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
