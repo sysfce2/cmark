@@ -137,7 +137,7 @@ jobs:
         ctest --test-dir build -C Debug --output-on-failure
       shell: cmd
     - name: diagnostic
-      run: 'dir /b /a /s'
+      run: 'dir /s/w/o/p'
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
